@@ -1,7 +1,8 @@
 # Datasets
 - [**TrueFace** Dataset Faces (Pre Social Network and Post Social Network)](#trueface-dataset)
-- [**FORLAB** only Real Images](#forlab-dataset)
 - [**TrueFake**](#truefake-dataset)
+- [**FORLAB** only Real Images](#forlab-dataset)
+
 
 ---
 
@@ -117,12 +118,53 @@
                     ├── conf-f-psi-0.5
                     └── conf-f-psi-1 -->
 
+---------------------------------------------------------------------
+
+### TrueFake Dataset
+The **TrueFake** dataset includes a variety of real and fake faces generated for evaluation and testing purposes.
+
+/media/NAS/
+- TrueFake
+  - Extension
+    - FLUX.1  
+      - animals
+      - faces
+      - general  
+      - landscapes
+    - StableDiffusion1.5
+      - animals
+      - animals_backup
+      - faces
+      - general
+      - landscapes
+    - StableDiffusion2
+      - animals
+      - animals_backup
+      - faces
+      - general
+      - landscapes
+    - StableDiffusion3
+      - animals
+      - animals_backup
+      - faces
+      - general
+      - landscapes
+    - StableDiffusionXL  
+      - animals
+      - animals_backup
+      - faces
+      - general
+      - landscapes
+    - StyleGAN3
+      - conf-t-psi-0.5  
+      - conf-t-psi-1
+
 
 ---------------------------------------------------------------------
 ### FORLAB Dataset
 The **FORLAB** dataset contains only real images.
 
-**NOTE** subfolders are not complete bc idk if it's useful
+**NOTA** subfolders are not complete bc idk if it's useful
 
 /media/NAS/
 - FORLAB
@@ -143,10 +185,3 @@ The **FORLAB** dataset contains only real images.
     - nohup.log  
     - out_download.log  
     - smartphones
-
-
-
----------------------------------------------------------------------
-
-### TrueFake Dataset
-The **TrueFake** dataset includes a variety of real and fake faces generated for evaluation and testing purposes.
