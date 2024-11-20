@@ -25,3 +25,7 @@ The students working on this project will:
 
 ● Challenge modern fake image detectors by using the above mentioned adversarial
 techniques and develop solution robust to these latter.
+
+# Utils
+
+source myvenv/bin/activate
