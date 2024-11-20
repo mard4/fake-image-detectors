@@ -18,3 +18,7 @@ DETECT
 MODELS
 [SDXL] https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main
 [SDXL-Turbo] https://huggingface.co/stabilityai/sdxl-turbo/tree/main
+
+
+
+[STABLE-DIFFUSION][https://github.com/CompVis/stable-diffusion]
