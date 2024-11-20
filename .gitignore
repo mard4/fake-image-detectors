@@ -1,1 +1,4 @@
 myvenv/
+dataset/__pycache__/
+__pycache__/
+mardeen.ipynb
