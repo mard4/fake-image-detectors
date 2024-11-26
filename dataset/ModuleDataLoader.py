@@ -4,6 +4,7 @@ from torch.utils.data import DataLoader, Subset, Dataset, ConcatDataset
 import numpy as np
 import os
 from PIL import Image  
+from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 # Define label mapping globally
@@ -125,23 +126,34 @@ class DataloaderTrueFace:
         dataloader = DataLoader(combined_dataset, batch_size=batch_size, shuffle=True)
         return dataloader
 
-class DataloaderTRUEFAKE:
-    def __init__(self):
-        self.fake_base_path = '/media/NAS/TrueFake/Extension'
-        self.real_base_path = '/media/NAS/RealImages'  # Update this path as per your directory for Real images
+# ==============================================================================================================
+# ==============================================================================================================
+# ==============================================================================================================
+# ==============================================================================================================
 
-    def load_data(self, real_or_fake, batch_size=32, transform=None, max_images_per_class=None, ALL_MODELS=True, models=None):
+class DataloaderTRUEFAKE:
+    def __init__(self, main_path="/media/NAS"):
+        self.fake_base_path = os.path.join(main_path, "TrueFake", "PreSocial", "Fake")
+        self.real_base_path = os.path.join(main_path, "TrueFake", "PreSocial", "Real")
+
+    def load_data(self, batch_size=32, transform=None, max_images_per_class=None, 
+                  ALL_MODELS=True, models=None,
+                  ALL_FOLDERS_FAKE=True, folders_fake=None,
+                  ALL_FOLDERS_REAL=True, folders_real=None):
         """
-        Load data for 'Real' or 'Fake' classes with the option to select specific models.
-        
+        Load data for both 'Real' and 'Fake' classes with the option to select specific models and folders.
+
         Args:
-        - real_or_fake (str): 'Real' or 'Fake'.
         - batch_size (int, optional): Batch size for DataLoader.
         - transform (callable, optional): Transformations to apply.
         - max_images_per_class (int, optional): Maximum number of images to load per class.
-        - ALL_MODELS (str, optional): 'YES' to load all models, 'NO' to load specific models.
-        - models (list of str, optional): List of model names to load when ALL_MODELS is 'NO'.
-        
+        - ALL_MODELS (bool or str, optional): True to load all models in 'Fake', False to load specific models.
+        - models (list of str, optional): List of model names to load when ALL_MODELS is False.
+        - ALL_FOLDERS_FAKE (bool or str, optional): True to load all folders under each model in 'Fake' images.
+        - folders_fake (list of str, optional): List of folder names to load under each model when ALL_FOLDERS_FAKE is False.
+        - ALL_FOLDERS_REAL (bool or str, optional): True to load all folders in 'Real' images.
+        - folders_real (list of str, optional): List of folder names to load in 'Real' images when ALL_FOLDERS_REAL is False.
+
         Returns:
         - DataLoader: PyTorch DataLoader for the combined dataset.
         """
@@ -153,66 +165,60 @@ class DataloaderTRUEFAKE:
                                      std=[0.229, 0.224, 0.225])
             ])
         
-        # Validate 'real_or_fake' parameter
-        if real_or_fake not in LABEL_MAP:
-            raise ValueError(f"Invalid value for real_or_fake: {real_or_fake}. Expected 'Real' or 'Fake'.")
-        
-        label = LABEL_MAP[real_or_fake]
-        
         datasets_list = []
-        
-        if real_or_fake == 'Fake':
-            # Determine which models to load
-            if ALL_MODELS:
-                models_to_load = [model for model in os.listdir(self.fake_base_path) if os.path.isdir(os.path.join(self.fake_base_path, model))]
-                print("Loading all available models.")
-            elif ALL_MODELS == False:
-                if not models:
-                    raise ValueError("When ALL_MODELS is FALSE, the 'models' parameter must be provided as a list of model names.")
-                models_to_load = models
-                print(f"Loading specified models: {models_to_load}")
+
+        # Convert ALL_MODELS and ALL_FOLDERS to booleans if they are strings
+        if isinstance(ALL_MODELS, str):
+            ALL_MODELS = ALL_MODELS.strip().lower() in ['true', 'yes', '1']
+        if isinstance(ALL_FOLDERS_FAKE, str):
+            ALL_FOLDERS_FAKE = ALL_FOLDERS_FAKE.strip().lower() in ['true', 'yes', '1']
+        if isinstance(ALL_FOLDERS_REAL, str):
+            ALL_FOLDERS_REAL = ALL_FOLDERS_REAL.strip().lower() in ['true', 'yes', '1']
+
+        # Load Fake images
+        # Determine which models to load
+        if ALL_MODELS is True:
+            models_to_load = [model for model in os.listdir(self.fake_base_path) 
+                              if os.path.isdir(os.path.join(self.fake_base_path, model))]
+            print("Loading all available models for Fake images.")
+        elif ALL_MODELS is False:
+            if not models:
+                raise ValueError("When ALL_MODELS is False, the 'models' parameter must be provided as a list of model names.")
+            models_to_load = models
+            print(f"Loading specified models for Fake images: {models_to_load}")
+        else:
+            raise ValueError("ALL_MODELS parameter must be a boolean or a string representing a boolean.")
+
+        # Traverse through the selected models
+        for model in tqdm(models_to_load, desc="Loading Fake Models"):
+            model_path = os.path.join(self.fake_base_path, model)
+            if not os.path.isdir(model_path):
+                print(f"Model directory does not exist: {model_path}. Skipping.")
+                continue
+
+            # Determine which folders to load under each model
+            if ALL_FOLDERS_FAKE is True:
+                folders_to_load = [folder for folder in os.listdir(model_path) 
+                                   if os.path.isdir(os.path.join(model_path, folder))]
+            elif ALL_FOLDERS_FAKE is False:
+                if not folders_fake:
+                    raise ValueError("When ALL_FOLDERS_FAKE is False, the 'folders_fake' parameter must be provided as a list of folder names.")
+                folders_to_load = folders_fake
             else:
-                raise ValueError("ALL_MODELS parameter must be either True or False")
-            
-            # Traverse through the selected models
-            for model in models_to_load:
-                model_path = os.path.join(self.fake_base_path, model)
-                if not os.path.isdir(model_path):
-                    print(f"Model directory does not exist: {model_path}. Skipping.")
-                    continue  # Skip if not a directory
-                for category in os.listdir(model_path):
-                    category_path = os.path.join(model_path, category)
-                    if not os.path.isdir(category_path):
-                        continue  # Skip if not a directory
-                    dataset = Datasettone(category_path, label=label, transform=transform)
-                    print(f"Number of images found in {category_path}: {len(dataset)}")
-                    
-                    if len(dataset) == 0:
-                        print(f"No images found in directory: {category_path}. Skipping.")
-                        continue  # Skip if dataset is empty
-                    
-                    if max_images_per_class is not None:
-                        indices = list(range(min(max_images_per_class, len(dataset))))
-                        dataset = Subset(dataset, indices)
-                        print(f"Subset size for {category_path}: {len(dataset)}")
-                    
-                    datasets_list.append(dataset)
-        
-        elif real_or_fake == 'Real':
-            # Traverse through '/media/NAS/RealImages/<Category>/'
-            if not os.path.exists(self.real_base_path):
-                raise FileNotFoundError(f"The specified real images directory does not exist: {self.real_base_path}")
-            
-            for category in os.listdir(self.real_base_path):
-                category_path = os.path.join(self.real_base_path, category)
+                raise ValueError("ALL_FOLDERS_FAKE parameter must be a boolean or a string representing a boolean.")
+
+            # Traverse through the selected folders under the model
+            for folder in folders_to_load:
+                category_path = os.path.join(model_path, folder)
                 if not os.path.isdir(category_path):
-                    continue  # Skip if not a directory
-                dataset = Datasettone(category_path, label=label, transform=transform)
+                    print(f"Folder does not exist: {category_path}. Skipping.")
+                    continue
+                dataset = Datasettone(category_path, label=LABEL_MAP['Fake'], transform=transform)
                 print(f"Number of images found in {category_path}: {len(dataset)}")
                 
                 if len(dataset) == 0:
                     print(f"No images found in directory: {category_path}. Skipping.")
-                    continue  # Skip if dataset is empty
+                    continue
                 
                 if max_images_per_class is not None:
                     indices = list(range(min(max_images_per_class, len(dataset))))
@@ -221,11 +227,42 @@ class DataloaderTRUEFAKE:
                 
                 datasets_list.append(dataset)
         
+        # Load Real images
+        # Determine which folders to load
+        if ALL_FOLDERS_REAL is True:
+            folders_to_load_real = [folder for folder in os.listdir(self.real_base_path) 
+                                    if os.path.isdir(os.path.join(self.real_base_path, folder))]
+            print("Loading all available folders for Real images.")
+        elif ALL_FOLDERS_REAL is False:
+            if not folders_real:
+                raise ValueError("When ALL_FOLDERS_REAL is False, the 'folders_real' parameter must be provided as a list of folder names.")
+            folders_to_load_real = folders_real
+            print(f"Loading specified folders for Real images: {folders_real}")
         else:
-            raise ValueError("real_or_fake must be 'Real' or 'Fake'")
+            raise ValueError("ALL_FOLDERS_REAL parameter must be a boolean or a string representing a boolean.")
+
+        # Traverse through the selected folders
+        for folder in tqdm(folders_to_load_real, desc="Loading Real Folders"):
+            folder_path = os.path.join(self.real_base_path, folder)
+            if not os.path.isdir(folder_path):
+                print(f"Folder directory does not exist: {folder_path}. Skipping.")
+                continue
+            dataset = Datasettone(folder_path, label=LABEL_MAP['Real'], transform=transform)
+            print(f"Number of images found in {folder_path}: {len(dataset)}")
+            
+            if len(dataset) == 0:
+                print(f"No images found in directory: {folder_path}. Skipping.")
+                continue
+            
+            if max_images_per_class is not None:
+                indices = list(range(min(max_images_per_class, len(dataset))))
+                dataset = Subset(dataset, indices)
+                print(f"Subset size for {folder_path}: {len(dataset)}")
+            
+            datasets_list.append(dataset)
         
         if not datasets_list:
-            raise ValueError(f"No datasets were loaded for '{real_or_fake}'. Please check the paths and parameters.")
+            raise ValueError("No datasets were loaded. Please check the paths and parameters.")
         
         # Concatenate all datasets
         combined_dataset = ConcatDataset(datasets_list)
@@ -295,39 +332,28 @@ if __name__ == "__main__":
     print("loading TrueFace")
 
     ### LOADER FOR TrueFace
-    loader_TrueFace = DataloaderTrueFace()
+    loader_TrueFace = DataloaderTrueFace(main_path='/media/NAS')
     dataloader_TrueFace = loader_TrueFace.load_data(
         'TrueFace_PostSocial', 'Facebook', 'StyleGAN',
         psi_value="images-psi-0.5", batch_size=64, max_images_per_class=100  # IMAGE LIMIT
     )
-
-
-    ### plottare immagini
-    images, labels = next(iter(dataloader_TrueFace))
-    plot_images(images, labels, classes=['Fake', 'Real'], num_images=10)
     
     #############################################################################
     print("loading TRUEFAKE")
 
-    loader_TRUEFAKE = DataloaderTRUEFAKE(main_path)
-    
-    # Load 'Fake' data  (ALL MODELS)
-    dataloader_TRUEFAKE_fake = loader_TRUEFAKE.load_data(
-        real_or_fake='Fake',
-        batch_size=64,
-        max_images_per_class=100,  # Limit per category
-        ALL_MODELS=True  # Load all available models
-    )
-    
-    # LOAD 'fake' data (ONLY SPECIFIED MODELS)
-    dataloader_TRUEFAKE_fake = loader_TRUEFAKE.load_data(
-        real_or_fake='Fake',
-        batch_size=64,
-        max_images_per_class=100,  # Limit per category
-        ALL_MODELS=False,  # Do not load all models
-        models=['StableDiffusion1.5', 'StyleGAN3']  # Specify desired models
+    data_loader_diofaaa = DataloaderTRUEFAKE(main_path='/media/NAS')
+
+    # Load data with specific models and specific folders under those models for Fake images, and specific folders for Real images
+    dataloaderdiofaaaaaaa = data_loader_diofaaa.load_data(
+        max_images_per_class=10,
+        ALL_MODELS=False, 
+        models=['FLUX.1'], 
+        ALL_FOLDERS_FAKE=False, 
+        folders_fake=['faces'],  # Folders under each model in 'Fake' images
+        ALL_FOLDERS_REAL=False, 
+        folders_real=['FFHQ']    # Folders in 'Real' images
     )
     
     ### plottare immagini
-    images, labels = next(iter(dataloader_TRUEFAKE_fake))
+    images, labels = next(iter(dataloaderdiofaaaaaaa))
     plot_images(images, labels, classes=['Fake', 'Real'], num_images=10)
