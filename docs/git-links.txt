@@ -22,3 +22,6 @@ MODELS
 
 
 [STABLE-DIFFUSION][https://github.com/CompVis/stable-diffusion]
+
+# EXPERIMENTAL
+[Attack with GradCam] https://github.com/wkim97/ada?tab=readme-ov-file
