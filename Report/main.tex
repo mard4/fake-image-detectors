@@ -23,14 +23,13 @@
 \end{abstract}
 
 \section{Introduction}
-    Synthetic images are now flooding the real world. From online dating sites to social media, fake profiles and scams are everywhere. The problem with synthetic images is that, while some of them are funny and harmless, others could be harmful, they could be exploited by malicious users. In relation to this, in the image forensic field there is a continuous fight between \textit{fake image detectors} and \textit{adversarial attacks}. On one hand, the detectors try to distinguish fake images from real ones, while, on the other hand, the attacks try to trick the detectors by manipulating the images (both real and fake ones). In order to detect fake images, we can exploit the traces/artifacts that fake image generators leave on the generated images. To do so, we have two main types of techniques: the \textit{low-level forensic techniques} and the \textit{high-level forensic techniques}. To former focuses on the pixel-level artifacts, which are almost invisible to the human eye. The latter focuses on physical inconsistencies and on repeated and uniform patterns, both of which are mostly visible to the human eye. Examples of physical inconsistencies are lighting, shadows, reflections or vanishing points inconsistencies. While, an example of repeated and uniform patterns, typical of GAN-based image generators, is the generation of the mouth, the nose and the eyes always in the same position. In general, we prefer to rely on low-level artifacts since fake image generators are becoming smarter every day, thus they are learning to generate always more realistic images, with fewer physical inconsistencies.
+    Synthetic images are now flooding the real world. From online dating sites to social media, fake profiles and scams are everywhere. The problem with synthetic images is that, while some of them are funny and harmless, others could be harmful, they could be exploited by malicious users \cite{carlini2020evading}. In relation to this, in the image forensic field there is a continuous fight between \textit{fake image detectors} and \textit{adversarial attacks}. On one hand, the detectors try to distinguish fake images from real ones, while, on the other hand, the attacks try to trick the detectors by manipulating the images (both real and fake ones). In order to detect fake images, we can exploit the traces/artifacts that fake image generators leave on the generated images. To do so, we have two main types of techniques: the \textit{low-level forensic techniques} and the \textit{high-level forensic techniques}. To former focuses on the pixel-level artifacts, which are almost invisible to the human eye. The latter focuses on physical inconsistencies and on repeated and uniform patterns, both of which are mostly visible to the human eye. Examples of physical inconsistencies are lighting, shadows, reflections or vanishing points inconsistencies \cite{farid2022lighting}\cite{farid2022perspective}. While, an example of repeated and uniform patterns, typical of GAN-based image generators, is the generation of the mouth, the nose and the eyes always in the same position \cite{mundra2023exposing}. In general, we prefer to rely on low-level artifacts since fake image generators are becoming smarter every day, thus they are learning to generate always more realistic images, with fewer physical inconsistencies.
+
+\section{Detectors}
+
+    In this section we will briefly describe a couple of fake image detectors: one uses CLIP to extract the feature vectors from the images \cite{cozzolino2024raising} and one identifies the low-level traces/artifacts by training a GAN and a Diffusion Model \cite{corvi2023detection}.
 
 
-    METTERE LE REFERENCE IN INTRODUCTION
-
-
-    \cite{zhu2005semi}
-    %As discussed in \cite{zhu2005semi}, semi-supervised learning is an important area of research.
 
     %\begin{figure}[h]
     %    \centering
@@ -39,7 +38,6 @@
     %    \label{fig:esempio}
     %\end{figure}
 
-\section{Detectors}
     \subsection{CLIP}
     \subsection{PIZZA}
 \section{Attacks}
