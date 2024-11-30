@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1732993116 "main.aux" "main.bbl" "main" 1732998693
+["bibtex main"] 1733000040 "main.aux" "main.bbl" "main" 1733000085
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1732998693 1758 24525bc21f953815fa756028979547bf "pdflatex"
+  "main.aux" 1733000040 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
   "references.bib" 1732974801 1770 4bb81558b590737e5f9e119fd891edd3 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1732998692 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1732998693
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1732998692 4494 f89df6e56533640429c229cae4eb2207 ""
+["pdflatex"] 1733000040 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733000085
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733000084 5516 fd5a1098177fae26a70b9762a74c7d43 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -19,6 +19,16 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm" 1136768653 2680 312a2d12b1f1df8ee0212e7ba1962402 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1136768653 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1136768653 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1136849748 44656 0cbca70e0534538582128f6b54593cca ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -49,10 +59,10 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1631107230 4362028 785fb9f49f0885b9b8917d40f83e83f4 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1631107330 2798040 2e10c2a099101303e07af6ee8b76d76a ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "main.aux" 1732998693 1758 24525bc21f953815fa756028979547bf "pdflatex"
-  "main.bbl" 1732993116 2334 a3ae42532fb4d06a7939317f9ec80992 "bibtex main"
-  "main.tex" 1732998692 4494 f89df6e56533640429c229cae4eb2207 ""
+  "main.aux" 1733000040 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
+  "main.bbl" 1733000040 2334 a3ae42532fb4d06a7939317f9ec80992 "bibtex main"
+  "main.tex" 1733000084 5516 fd5a1098177fae26a70b9762a74c7d43 ""
   (generated)
-  "main.aux"
-  "main.pdf"
   "main.log"
+  "main.pdf"
+  "main.aux"
