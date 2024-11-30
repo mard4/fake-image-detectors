@@ -40,13 +40,11 @@ As discussed in \cite{corvi2023detection}, semi-supervised learning is an import
 \section{Detectors}
     \subsection{CLIP}
     \subsection{Detection of Images by Diffusion Models} 
-        Lately, \textit{Diffusion Models} gained the spotlight in the image generation community, allowing for unmatched test-to-image photorealism and diversity. These new powerful tools are a new asset in the hands of malicious users, posing new challenges to the forensic community. 
-
-        Most SoTA detectors exploits low-level artifacts, not visible by a human eye, introduced during the generation phase by GAN generators. The study in \cite{corvi2023detection} suggests that, as can be seen in Fig. \ref{fig:pizza_fourier}, similar traces can be found also in DM-generated images
+        Lately, \textit{Diffusion Models} gained the spotlight in the image generation community, allowing for unmatched test-to-image photorealism and diversity. These new powerful tools are a new asset in the hands of malicious users, posing new challenges to the forensic community. Most SoTA detectors exploits low-level artifacts, not visible by a human eye, introduced during the generation phase by GAN generators. The study in \cite{corvi2023detection} suggests that, as can be seen in Fig. \ref{fig:pizza_fourier}, similar traces can be found also in DM-generated images
 
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.8\linewidth]{Img/pizza_fourier.png}
+            \includegraphics[width=0.6\linewidth]{Img/pizza_fourier.png}
             \caption{Fourier transform of of the fingerprint of some DM architectures (\textit{GLIDE} \cite{nichol2021glide}, \textit{Latent Diffusion} \cite{rombach2022high}, \textit{Stable Diffusion} \cite{stablediffusion2022}, \textit{ADM} \cite{dhariwal2021diffusion}, \textit{DALL$\cdot$E 2} \cite{ramesh2022hierarchical}) presented in \cite{corvi2023detection}}
             \label{fig:pizza_fourier}
         \end{figure}
@@ -54,7 +52,22 @@ As discussed in \cite{corvi2023detection}, semi-supervised learning is an import
         The study in \cite{corvi2023detection} also provides interesting evaluation results, comparing the performances of several SoTA detectors over different GAN and DM generators both in ideal case (uncompressed images) and real case (compressed and resized using the guidelines in \cite{vipcuplink}). These evaluations highlight how performances vary significantly between the models, due to the differences in their artifacts, therefore suggesting generalization difficulties (for example, in classifying a DM images with a GAN training and vice versa). Despite these difficulties, the inclusion of DM during training and performing an careful calibration procedure, like the one suggested by \cite{Platt1999probabilistic}, may help the generalization over similar architectures, despite not providing reliable results on out-of-training artifacts.
 \section{Attacks}
     Despite the powerful detectors at our disposal, there exists many users that aim at attacking such detectors, in order to hide traces of their forgeries or also to introduce traces typical of generated images, to hide disguise content as fake. In the following chapter, some newly developed attacking techniques are discussed, to provide a general overview of the attacker-side.
-    \subsection{Mimicry}
+
+    \subsection{Mimicry attack against image splicing forensic}
+        As stated in \cite{boato2024adversarial}, this \textit{mimicry adversarial attack} can be used to hide image manipulation while forcing the detector to detect arbitrary ones by applying a gradient based optimization approach. Applied at large scale, this would cause high false-alarms, producing an effect similar to \textit{DoS} attacks while undermining the reliability of the target detector.
+
+        The attack strategy proposed in \cite{boato2024adversarial} involves splitting the image in uniform patches and use these to compute a target representation for both the \textit{pristine patch $t_p$}, computed from the pristine patches, and the \textit{forged patch $t_f$}, computed from the forged patches. The function used for computing such target representations needs to be defined for each detector for the attack to be effective, this due to the fact that different detectors exploit different features. Once the targets have been computed, a gradient-based iterative approach is applied the each patch of the manipulated image, in order to make the patch feature representation more similar to the respective target's feature representation. A visualization of such iterative approach can be seen in Fig. \ref{fig:mim_visual}
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.8\linewidth]{Img/mim_visual.png}
+            \caption{Visualization of the mimicry attack strategy and its effects proposed in \cite{boato2024adversarial}. The "\textit{ground truth}" tampering map represents the real forgery, while the "\textit{target}" tampering map represent the arbitrary forgery the attacker wants the detector to output}
+            \label{fig:mim_visual}
+        \end{figure}
+
+        The evaluation results reported in \cite{boato2024adversarial} suggests this attack is highly effective, both in hiding the real forgery and also highlighting a "decoy" forgery arbitrarily introduced. Two image detectors were tested, \textit{Noiseprint} \cite{cozzolino2019noiseprint} and \textit{EXIF-SC} \cite{huh2018fighting}, over two different datasets, \textit{Columbia} \cite{ng2004data} and \textit{DSO-1} \cite{carvalho2015illuminant}. Several threshold-based and threshold-less metrics have been tested, with the latter being more important from the attacker point of view since the threshold values are unknown to him.
+
+        Another interesting result presented in \cite{boato2024adversarial} regards the \textit{cross-detector} scenario, in which the attack is performed targeting a specific detector but then another is used in the evaluation. Also, \textit{stacked attacks} are considered, in which an image is sequentially attacked against different detectors. An evaluation in these regards reveal mixed results: a misaligned attack in not effective, while the performances of a stacked attack are highly dependant on both the order of the attacks and the detector used in the evaluation. Nevertheless, this is an interesting scenario open for further studies.
     \subsection{SD Laundering}
     \subsection{White Black}
     \subsection{Adversarial Robustness}

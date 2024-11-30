@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1732964477.38372 "main.aux" "main.bbl" "main" 1732964512.37826 0
-  "./references.bib" 1732963748.84955 2259 acb61e12051309c26023363e2f8f06cc ""
+["bibtex main"] 1732983571.42048 "main.aux" "main.bbl" "main" 1732983855.69887 0
+  "./references.bib" 1732982544.83078 3863 59d054ff0ff16a86dc17f8492673b74d ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1732964512.23338 2839 4dae5e951545fab8c39eab74a1eed8ed "pdflatex"
+  "main.aux" 1732983855.56388 3789 6480a27f4e224a80841f3087b35f4209 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1732964511.78444 "/home/thomasl/Data/REPOS/Semestre_3/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1732964512.37838 0
-  "/home/thomasl/Data/REPOS/Semestre_3/fake-image-detectors/Report/main.tex" 1732964511.68337 4163 06fecafd8b4bb4d0813e7fd90827c54c ""
+["pdflatex"] 1732983855.06544 "/home/thomasl/Data/REPOS/Semestre_3/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1732983855.69899 0
+  "/home/thomasl/Data/REPOS/Semestre_3/fake-image-detectors/Report/main.tex" 1732983854.95722 7217 c28ab20f1cfe1fb08c8e6afef16d0607 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -28,6 +28,8 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1136849748 44656 0cbca70e0534538582128f6b54593cca ""
@@ -60,10 +62,11 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731860906 8221479 2b820df03c991a045cf39c279cd69984 ""
   "/usr/local/texlive/2024/texmf.cnf" 1731860826.93366 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "Img/First_stage.png" 1732956460.28681 188124 6fe204d08e78e4e767b3754b61617653 ""
+  "Img/mim_visual.png" 1732975790.79709 268091 03bf86563f0b5252b78524a2466cc985 ""
   "Img/pizza_fourier.png" 1732960316.58584 827452 d7ffb61ad8e75a0c33f9426f6d6585ea ""
-  "main.aux" 1732964512.23338 2839 4dae5e951545fab8c39eab74a1eed8ed "pdflatex"
-  "main.bbl" 1732964477.45667 2640 6a9065edc6b4a3f0b61baafcf2de1d3c "bibtex main"
-  "main.tex" 1732964511.68337 4163 06fecafd8b4bb4d0813e7fd90827c54c ""
+  "main.aux" 1732983855.56388 3789 6480a27f4e224a80841f3087b35f4209 "pdflatex"
+  "main.bbl" 1732983571.47537 3845 75963656a088d24e286aacc6cc81bbab "bibtex main"
+  "main.tex" 1732983854.95722 7217 c28ab20f1cfe1fb08c8e6afef16d0607 ""
   (generated)
   "main.aux"
   "main.log"
