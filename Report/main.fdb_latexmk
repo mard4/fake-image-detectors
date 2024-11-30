@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1733000040 "main.aux" "main.bbl" "main" 1733000085
+["bibtex main"] 1733000040 "main.aux" "main.bbl" "main" 1733000477
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1733000040 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
-  "references.bib" 1732974801 1770 4bb81558b590737e5f9e119fd891edd3 ""
+  "main.aux" 1733000476 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
+  "references.bib" 1733000459 1770 4bb81558b590737e5f9e119fd891edd3 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1733000040 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733000085
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733000084 5516 fd5a1098177fae26a70b9762a74c7d43 ""
+["pdflatex"] 1733000476 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733000477
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733000475 5315 603758a88213972e5b9fde11d2f04e3c ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -59,10 +59,10 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1631107230 4362028 785fb9f49f0885b9b8917d40f83e83f4 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1631107330 2798040 2e10c2a099101303e07af6ee8b76d76a ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "main.aux" 1733000040 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
-  "main.bbl" 1733000040 2334 a3ae42532fb4d06a7939317f9ec80992 "bibtex main"
-  "main.tex" 1733000084 5516 fd5a1098177fae26a70b9762a74c7d43 ""
+  "main.aux" 1733000476 1758 5e581120bbfadf936ce9d65b56952cf3 "pdflatex"
+  "main.bbl" 1733000459 2334 a3ae42532fb4d06a7939317f9ec80992 "bibtex main"
+  "main.tex" 1733000475 5315 603758a88213972e5b9fde11d2f04e3c ""
   (generated)
-  "main.log"
-  "main.pdf"
   "main.aux"
+  "main.pdf"
+  "main.log"
