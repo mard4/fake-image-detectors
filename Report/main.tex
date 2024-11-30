@@ -68,8 +68,22 @@ As discussed in \cite{corvi2023detection}, semi-supervised learning is an import
         The evaluation results reported in \cite{boato2024adversarial} suggests this attack is highly effective, both in hiding the real forgery and also highlighting a "decoy" forgery arbitrarily introduced. Two image detectors were tested, \textit{Noiseprint} \cite{cozzolino2019noiseprint} and \textit{EXIF-SC} \cite{huh2018fighting}, over two different datasets, \textit{Columbia} \cite{ng2004data} and \textit{DSO-1} \cite{carvalho2015illuminant}. Several threshold-based and threshold-less metrics have been tested, with the latter being more important from the attacker point of view since the threshold values are unknown to him.
 
         Another interesting result presented in \cite{boato2024adversarial} regards the \textit{cross-detector} scenario, in which the attack is performed targeting a specific detector but then another is used in the evaluation. Also, \textit{stacked attacks} are considered, in which an image is sequentially attacked against different detectors. An evaluation in these regards reveal mixed results: a misaligned attack in not effective, while the performances of a stacked attack are highly dependant on both the order of the attacks and the detector used in the evaluation. Nevertheless, this is an interesting scenario open for further studies.
-    \subsection{SD Laundering}
-    \subsection{White Black}
+
+    \subsection{Image Laundering with Stable Diffusion}
+        Differently from "classic" diffusion models, like \textit{Latent Diffusion}, \textit{Stable Diffusion} models allow the users to provide an initial image as input \cite{sd1_github} \cite{sd2_github} \cite{podell2023sdxl} \cite{sauer2023adversarial-sdxl-turbo}. This image will be superimposed with noise and modified by the model according to the textual prompt. The weight of such modifications can be set via a dedicated strength parameter in the range $[0, 1]$.
+
+        Processing images in such pipeline using a strength parameter equal to 0 produces outputs with the maximum similarity to the inputs: the image is encoded and decoded right away, without any denoising step. As suggested in \cite{mandelli2024synthetic}, this process could be exploited by malicious users in order to mask real content as synthetic. In fact, the encoding/decoding is sufficient to introduce enough artifacts into the real image to make it synthetic in the eyes of numerous detectors. This practice is known as \textit{image laundering}.
+
+        The study in \cite{mandelli2024synthetic}, proposes a two-step architecture, visualized in Fig. \ref{fig:launder_2_stage}, as solution to efficiently discriminate between real, fully synthetic and laundered images. Such architecture is inspired by \cite{mandelli2022detecting}, in which the image is split into multiple random patches, a score is assigned to each one and the average o the highest scores provide the global score of the image: a positive score suggest a synthetic image, while a negative score a real one. Despite the good results, this backbone architecture alone is unfit for the laundered image detection task, hence the introduction of the 2 steps: the first step discriminate real from synthetic images, while the second step discriminate fully synthetic from laundered images.
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.95\linewidth]{Img/launder_2_stage.png}
+            \caption{Visualization of the 2 step architecture proposed in \cite{mandelli2024synthetic} for the laundered image classification task. The first step discriminate real images from synthetic (both fully and lanudere) ones, while the second step discriminate fully synthetic images from laundered ones}
+            \label{fig:launder_2_stage}
+        \end{figure}
+
+        The evaluation provided in \cite{mandelli2022detecting} about such 2 step pipeline are good: the first step reach a good separability between real and synthetic image, while the second step reach almost perfect results over multiple models and multiple metrics, with only minor decreases in performances when post-processing operations like JPEG compression and resize are applied.
     \subsection{Adversarial Robustness}
 \section{Experiment}
 \section{Conclusions}
