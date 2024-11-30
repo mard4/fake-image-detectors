@@ -59,4 +59,22 @@ T.-T. Ng, S.-F. Chang, and Q.~Sun, ``A data set of authentic and spliced image b
 \bibitem{carvalho2015illuminant}
 T.~Carvalho, F.~A. Faria, H.~Pedrini, R.~d.~S. Torres, and A.~Rocha, ``Illuminant-based transformed spaces for image forensics,'' \emph{IEEE transactions on information forensics and security}, vol.~11, no.~4, pp. 720--733, 2015.
 
+\bibitem{sd1_github}
+{Computer Vision and Learning LMU Munich}, \emph{Stable Diffusion}, 2022 (accessed June 20, 2024), {https://github.com/CompVis/stable-diffusion}.
+
+\bibitem{sd2_github}
+S.~AI, \emph{Stable Diffusion Version 2}, 2022, \url{https://github.com/Stability-AI/stablediffusion}.
+
+\bibitem{podell2023sdxl}
+D.~Podell, Z.~English, K.~Lacey, A.~Blattmann, T.~Dockhorn, J.~M{\"u}ller, J.~Penna, and R.~Rombach, ``Sdxl: Improving latent diffusion models for high-resolution image synthesis,'' \emph{arXiv preprint arXiv:2307.01952}, 2023.
+
+\bibitem{sauer2023adversarial-sdxl-turbo}
+A.~Sauer, D.~Lorenz, A.~Blattmann, and R.~Rombach, ``Adversarial diffusion distillation,'' \emph{arXiv preprint arXiv:2311.17042}, 2023.
+
+\bibitem{mandelli2024synthetic}
+S.~Mandelli, P.~Bestagini, and S.~Tubaro, ``When synthetic traces hide real content: Analysis of stable diffusion image laundering,'' \emph{arXiv preprint arXiv:2407.10736}, 2024.
+
+\bibitem{mandelli2022detecting}
+S.~Mandelli, N.~Bonettini, P.~Bestagini, and S.~Tubaro, ``Detecting gan-generated images by orthogonal training of multiple cnns,'' in \emph{2022 IEEE International Conference on Image Processing (ICIP)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2022, pp. 3091--3095.
+
 \end{thebibliography}
