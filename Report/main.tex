@@ -6,6 +6,7 @@
 
 
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 
 \title{Exploring the Adversarial Robustness of AI-generated Image Detectors}
 
@@ -46,12 +47,13 @@ As discussed in \cite{corvi2023detection}, semi-supervised learning is an import
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.8\linewidth]{Img/pizza_fourier.png}
-            \caption{Fourier transform of of the fingerprint of some DM presented in \cite{corvi2023detection}}
+            \caption{Fourier transform of of the fingerprint of some DM architectures (\textit{GLIDE} \cite{nichol2021glide}, \textit{Latent Diffusion} \cite{rombach2022high}, \textit{Stable Diffusion} \cite{stablediffusion2022}, \textit{ADM} \cite{dhariwal2021diffusion}, \textit{DALL$\cdot$E 2} \cite{ramesh2022hierarchical}) presented in \cite{corvi2023detection}}
             \label{fig:pizza_fourier}
         \end{figure}
 
         The study in \cite{corvi2023detection} also provides interesting evaluation results, comparing the performances of several SoTA detectors over different GAN and DM generators both in ideal case (uncompressed images) and real case (compressed and resized using the guidelines in \cite{vipcuplink}). These evaluations highlight how performances vary significantly between the models, due to the differences in their artifacts, therefore suggesting generalization difficulties (for example, in classifying a DM images with a GAN training and vice versa). Despite these difficulties, the inclusion of DM during training and performing an careful calibration procedure, like the one suggested by \cite{Platt1999probabilistic}, may help the generalization over similar architectures, despite not providing reliable results on out-of-training artifacts.
 \section{Attacks}
+    Despite the powerful detectors at our disposal, there exists many users that aim at attacking such detectors, in order to hide traces of their forgeries or also to introduce traces typical of generated images, to hide disguise content as fake. In the following chapter, some newly developed attacking techniques are discussed, to provide a general overview of the attacker-side.
     \subsection{Mimicry}
     \subsection{SD Laundering}
     \subsection{White Black}
