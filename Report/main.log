@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.17)  30 NOV 2024 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.17)  1 DEC 2024 10:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -244,7 +244,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
- <./Img/First_stage.png> <./Img/pizza_fourier.png>]
+ <./Img/first_stage.png> <./Img/pizza_fourier.png>]
 <Img/mim_visual.png, id=18, 194.6472pt x 140.9265pt>
 File: Img/mim_visual.png Graphic file (type png)
 <use Img/mim_visual.png>
@@ -253,9 +253,26 @@ Package pdftex.def Info: Img/mim_visual.png  used on input line 63.
 <Img/launder_2_stage.png, id=19, 272.9397pt x 66.4884pt>
 File: Img/launder_2_stage.png Graphic file (type png)
 <use Img/launder_2_stage.png>
-Package pdftex.def Info: Img/launder_2_stage.png  used on input line 81.
+Package pdftex.def Info: Img/launder_2_stage.png  used on input line 82.
 (pdftex.def)             Requested size: 239.39923pt x 58.31822pt.
- (./main.bbl [2 <./Img/mim_visual.png> <./Img/launder_2_stage.png>])
+<Img/first_stage.png, id=20, 617.9085pt x 394.5942pt>
+File: Img/first_stage.png Graphic file (type png)
+<use Img/first_stage.png>
+Package pdftex.def Info: Img/first_stage.png  used on input line 98.
+(pdftex.def)             Requested size: 239.39923pt x 152.87958pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Img/second_stage.png, id=21, 611.6451pt x 394.5942pt>
+File: Img/second_stage.png Graphic file (type png)
+<use Img/second_stage.png>
+Package pdftex.def Info: Img/second_stage.png  used on input line 105.
+(pdftex.def)             Requested size: 239.39923pt x 154.44504pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./main.bbl [2 <./Img/mim_visual.png> <./Img/launder_2_stage.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -267,27 +284,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (./main.aux)
+[3 <./Img/first_stage.png> <./Img/second_stage.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2891 strings out of 474116
- 48798 string characters out of 5743687
+ 2910 strings out of 474116
+ 49251 string characters out of 5743687
  1943187 words of memory out of 5000000
- 25256 multiletter control sequences out of 15000+600000
+ 25275 multiletter control sequences out of 15000+600000
  591299 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,65p,954b,278s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 1545016 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (3 pages, 1876910 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

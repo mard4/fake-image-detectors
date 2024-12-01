@@ -77,4 +77,7 @@ S.~Mandelli, P.~Bestagini, and S.~Tubaro, ``When synthetic traces hide real cont
 \bibitem{mandelli2022detecting}
 S.~Mandelli, N.~Bonettini, P.~Bestagini, and S.~Tubaro, ``Detecting gan-generated images by orthogonal training of multiple cnns,'' in \emph{2022 IEEE International Conference on Image Processing (ICIP)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2022, pp. 3091--3095.
 
+\bibitem{sdxl_base_1_0}
+stabilityai, \emph{stable-diffusion-xl-base-1.0}, 2023 (accessed November 25, 2024), https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0.
+
 \end{thebibliography}
