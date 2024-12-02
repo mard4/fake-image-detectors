@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1733130182 "main.aux" "main.bbl" "main" 1733130201
+["bibtex main"] 1733130749 "main.aux" "main.bbl" "main" 1733130751
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1733130184 6011 1c48b5ddf6fae17bcc1697d0eb973ca2 "pdflatex"
+  "main.aux" 1733130751 6011 baece056990e423d55b0ff59817c7700 "pdflatex"
   "references.bib" 1733129731 8239 c0242dd3e61eeb3e2b792048fedb0faa ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1733130183 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733130201
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733130200 20223 66258e43b03d99635ae7710ccccca9c3 ""
+  "main.bbl"
+["pdflatex"] 1733130749 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733130751
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733130746 20639 7573d516b52c7c50be6825f9ae5edad8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -75,10 +75,10 @@
   "Img/mim_visual.png" 1733128766 268091 03bf86563f0b5252b78524a2466cc985 ""
   "Img/pizza_fourier.png" 1733128766 827452 d7ffb61ad8e75a0c33f9426f6d6585ea ""
   "Img/second_stage.png" 1733128766 156374 8e1d124c159d751bf359564910481a12 ""
-  "main.aux" 1733130184 6011 1c48b5ddf6fae17bcc1697d0eb973ca2 "pdflatex"
-  "main.bbl" 1733130183 7404 250e5a1c259003b8225c0ed1b441154a "bibtex main"
-  "main.tex" 1733130200 20223 66258e43b03d99635ae7710ccccca9c3 ""
+  "main.aux" 1733130751 6011 baece056990e423d55b0ff59817c7700 "pdflatex"
+  "main.bbl" 1733130749 7404 250e5a1c259003b8225c0ed1b441154a "bibtex main"
+  "main.tex" 1733130746 20639 7573d516b52c7c50be6825f9ae5edad8 ""
   (generated)
+  "main.log"
   "main.aux"
   "main.pdf"
-  "main.log"
