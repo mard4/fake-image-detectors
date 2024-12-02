@@ -15,45 +15,45 @@ Database file #1: references.bib
 Warning--empty year in denglarge
 
 Done.
-You've used 30 entries,
+You've used 25 entries,
             4087 wiz_defined-function locations,
-            965 strings with 12800 characters,
-and the built_in function-call counts, 19435 in all, are:
-= -- 1464
-> -- 572
-< -- 118
-+ -- 304
-- -- 118
-* -- 901
-:= -- 2882
-add.period$ -- 57
-call.type$ -- 30
-change.case$ -- 29
-chr.to.int$ -- 300
-cite$ -- 31
-duplicate$ -- 1440
-empty$ -- 1643
-format.name$ -- 135
-if$ -- 4511
+            943 strings with 11967 characters,
+and the built_in function-call counts, 15671 in all, are:
+= -- 1184
+> -- 445
+< -- 93
++ -- 232
+- -- 87
+* -- 722
+:= -- 2352
+add.period$ -- 47
+call.type$ -- 25
+change.case$ -- 24
+chr.to.int$ -- 234
+cite$ -- 26
+duplicate$ -- 1171
+empty$ -- 1341
+format.name$ -- 105
+if$ -- 3636
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 277
-newline$ -- 110
-num.names$ -- 29
-pop$ -- 719
+int.to.str$ -- 24
+missing$ -- 225
+newline$ -- 95
+num.names$ -- 24
+pop$ -- 578
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1485
+skip$ -- 1206
 stack$ -- 0
-substring$ -- 748
-swap$ -- 1064
-text.length$ -- 18
+substring$ -- 573
+swap$ -- 852
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 30
+type$ -- 25
 warning$ -- 1
-while$ -- 77
-width$ -- 31
-write$ -- 271
+while$ -- 64
+width$ -- 26
+write$ -- 228
 (There was 1 warning)
