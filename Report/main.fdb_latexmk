@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1733135033 "main.aux" "main.bbl" "main" 1733135102
+["bibtex main"] 1733148772 "main.aux" "main.bbl" "main" 1733149081
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1733135034 5004 f686949e65c2ac1a101a0b11897d3e37 "pdflatex"
-  "references.bib" 1733129731 8239 c0242dd3e61eeb3e2b792048fedb0faa ""
+  "main.aux" 1733148774 5012 1bf797d075898b615c714c91c28ad2ee "pdflatex"
+  "references.bib" 1733147295 7950 448534899c3349cbf781ac468537df08 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1733135033 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733135102
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733135102 18431 1d3a7154c88090b1cf45b9886f017c95 ""
+["pdflatex"] 1733148772 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733149081
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733149080 17314 2f0dabb80441a45ab9d3c1fae715f6a7 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -59,10 +59,10 @@
   "Img/launder_2_stage.png" 1733128766 178506 7b3256f8c4121cc8098d2cb04b3d821c ""
   "Img/mim_visual.png" 1733128766 268091 03bf86563f0b5252b78524a2466cc985 ""
   "Img/second_stage.png" 1733128766 156374 8e1d124c159d751bf359564910481a12 ""
-  "main.aux" 1733135034 5004 f686949e65c2ac1a101a0b11897d3e37 "pdflatex"
-  "main.bbl" 1733135033 6339 970d9e072736514ceae49579ac7a87b3 "bibtex main"
-  "main.tex" 1733135102 18431 1d3a7154c88090b1cf45b9886f017c95 ""
+  "main.aux" 1733148774 5012 1bf797d075898b615c714c91c28ad2ee "pdflatex"
+  "main.bbl" 1733148772 6116 2b503c4ff8b0ccae72ccdecf4c0de5d4 "bibtex main"
+  "main.tex" 1733149080 17314 2f0dabb80441a45ab9d3c1fae715f6a7 ""
   (generated)
-  "main.log"
-  "main.aux"
   "main.pdf"
+  "main.aux"
+  "main.log"

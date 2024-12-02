@@ -15,45 +15,45 @@ Database file #1: references.bib
 Warning--empty year in denglarge
 
 Done.
-You've used 25 entries,
+You've used 24 entries,
             4087 wiz_defined-function locations,
-            943 strings with 11967 characters,
-and the built_in function-call counts, 15671 in all, are:
-= -- 1184
-> -- 445
+            942 strings with 11956 characters,
+and the built_in function-call counts, 15174 in all, are:
+= -- 1149
+> -- 424
 < -- 93
-+ -- 232
-- -- 87
-* -- 722
-:= -- 2352
-add.period$ -- 47
-call.type$ -- 25
-change.case$ -- 24
++ -- 222
+- -- 82
+* -- 699
+:= -- 2271
+add.period$ -- 45
+call.type$ -- 24
+change.case$ -- 23
 chr.to.int$ -- 234
-cite$ -- 26
-duplicate$ -- 1171
-empty$ -- 1341
-format.name$ -- 105
-if$ -- 3636
+cite$ -- 25
+duplicate$ -- 1129
+empty$ -- 1298
+format.name$ -- 99
+if$ -- 3523
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 225
-newline$ -- 95
-num.names$ -- 24
-pop$ -- 578
+int.to.str$ -- 23
+missing$ -- 216
+newline$ -- 92
+num.names$ -- 23
+pop$ -- 552
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1206
+skip$ -- 1170
 stack$ -- 0
-substring$ -- 573
-swap$ -- 852
+substring$ -- 572
+swap$ -- 827
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 25
+type$ -- 24
 warning$ -- 1
-while$ -- 64
-width$ -- 26
-write$ -- 228
+while$ -- 63
+width$ -- 25
+write$ -- 220
 (There was 1 warning)

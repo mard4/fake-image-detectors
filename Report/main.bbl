@@ -68,12 +68,7 @@ S.-Y. Wang, O.~Wang, R.~Zhang, A.~Owens, and A.~A. Efros, ``Cnn-generated
   the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   June 2020.
 
-\bibitem{mardeenpaper1}
-V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
-  the adversarial robustness of clip for ai-generated image detection,''
-  \emph{arXiv preprint arXiv:2407.19553}, 2024.
-
-\bibitem{mardeenpaper2}
+\bibitem{de2024exploring}
 V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
   the adversarial robustness of clip for ai-generated image detection,''
   \emph{arXiv preprint arXiv:2407.19553}, 2024.
