@@ -53,31 +53,6 @@ R.~Corvi, D.~Cozzolino, G.~Zingarini, G.~Poggi, K.~Nagano, and L.~Verdoliva,
   Signal Processing (ICASSP)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
   2023, pp. 1--5.
 
-\bibitem{nichol2021glide}
-A.~Nichol, P.~Dhariwal, A.~Ramesh, P.~Shyam, P.~Mishkin, B.~McGrew,
-  I.~Sutskever, and M.~Chen, ``{GLIDE: Towards photorealistic image generation
-  and editing with text-guided diffusion models},'' \emph{arXiv preprint
-  arXiv:2112.10741}, 2021.
-
-\bibitem{rombach2022high}
-R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer, ``High-resolution
-  image synthesis with latent diffusion models,'' in \emph{CVPR}, 2022, pp.
-  10\,684--10\,695.
-
-\bibitem{stablediffusion2022}
-R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer, ``Stable
-  diffusion,'' \url{https://github.com/CompVis/stable-diffusion}, 2022.
-
-\bibitem{dhariwal2021diffusion}
-P.~Dhariwal and A.~Nichol, ``Diffusion models beat gans on image synthesis,''
-  \emph{Advances in Neural Information Processing Systems}, vol.~34, pp.
-  8780--8794, 2021.
-
-\bibitem{ramesh2022hierarchical}
-A.~Ramesh, P.~Dhariwal, A.~Nichol, C.~Chu, and M.~Chen, ``Hierarchical
-  text-conditional image generation with clip latents,'' \emph{arXiv preprint
-  arXiv:2204.06125v1}, 2022.
-
 \bibitem{vipcuplink}
 R.~Corvi, D.~Cozzolino, K.~Nagano, and L.~Verdoliva, ``{IEEE Video and Image
   Processing Cup},'' \url{https://grip-unina.github.io/vipcup2022/}, 2022.
@@ -86,6 +61,27 @@ R.~Corvi, D.~Cozzolino, K.~Nagano, and L.~Verdoliva, ``{IEEE Video and Image
 J.~Platt, ``Probabilistic outputs for support vector machines and comparison to
   regularized likelihood methods,'' \emph{Advances in Large Margin Classiers},
   1999.
+
+\bibitem{Wang_2020_CVPR}
+S.-Y. Wang, O.~Wang, R.~Zhang, A.~Owens, and A.~A. Efros, ``Cnn-generated
+  images are surprisingly easy to spot... for now,'' in \emph{Proceedings of
+  the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  June 2020.
+
+\bibitem{mardeenpaper1}
+V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
+  the adversarial robustness of clip for ai-generated image detection,''
+  \emph{arXiv preprint arXiv:2407.19553}, 2024.
+
+\bibitem{mardeenpaper2}
+V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
+  the adversarial robustness of clip for ai-generated image detection,''
+  \emph{arXiv preprint arXiv:2407.19553}, 2024.
+
+\bibitem{denglarge}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~I. Fei-Fei, ``A
+  large-scale hierarchical image database. computer vision and pattern
+  recognition, 2009. cvpr 2009,'' in \emph{IEEE Conference on}, pp. 248--255.
 
 \bibitem{boato2024adversarial}
 G.~Boato, F.~G. De~Natale, G.~De~Stefano, C.~Pasquini, and F.~Roli,
@@ -141,27 +137,6 @@ S.~Mandelli, N.~Bonettini, P.~Bestagini, and S.~Tubaro, ``Detecting
   gan-generated images by orthogonal training of multiple cnns,'' in \emph{2022
   IEEE International Conference on Image Processing (ICIP)}.\hskip 1em plus
   0.5em minus 0.4em\relax IEEE, 2022, pp. 3091--3095.
-
-\bibitem{Wang_2020_CVPR}
-S.-Y. Wang, O.~Wang, R.~Zhang, A.~Owens, and A.~A. Efros, ``Cnn-generated
-  images are surprisingly easy to spot... for now,'' in \emph{Proceedings of
-  the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  June 2020.
-
-\bibitem{mardeenpaper1}
-V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
-  the adversarial robustness of clip for ai-generated image detection,''
-  \emph{arXiv preprint arXiv:2407.19553}, 2024.
-
-\bibitem{mardeenpaper2}
-V.~De~Rosa, F.~Guillaro, G.~Poggi, D.~Cozzolino, and L.~Verdoliva, ``Exploring
-  the adversarial robustness of clip for ai-generated image detection,''
-  \emph{arXiv preprint arXiv:2407.19553}, 2024.
-
-\bibitem{denglarge}
-J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~I. Fei-Fei, ``A
-  large-scale hierarchical image database. computer vision and pattern
-  recognition, 2009. cvpr 2009,'' in \emph{IEEE Conference on}, pp. 248--255.
 
 \bibitem{sdxl_base_1_0}
 stabilityai, \emph{stable-diffusion-xl-base-1.0}, 2023 (accessed November 25,
