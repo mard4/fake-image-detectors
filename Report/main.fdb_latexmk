@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1733148772 "main.aux" "main.bbl" "main" 1733149081
+["bibtex main"] 1733154283 "main.aux" "main.bbl" "main" 1733154285
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1733148774 5012 1bf797d075898b615c714c91c28ad2ee "pdflatex"
+  "main.aux" 1733154285 4519 fd2761819a30e9076f4c3c3a4bcd0f41 "pdflatex"
   "references.bib" 1733147295 7950 448534899c3349cbf781ac468537df08 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1733148772 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733149081
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733149080 17314 2f0dabb80441a45ab9d3c1fae715f6a7 ""
+  "main.bbl"
+["pdflatex"] 1733154284 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733154285
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733154281 17294 f7d3c0a6b9e1bfbde182b221ff5fd2ef ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -57,12 +57,11 @@
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "Img/first_stage.png" 1733128766 188124 6fe204d08e78e4e767b3754b61617653 ""
   "Img/launder_2_stage.png" 1733128766 178506 7b3256f8c4121cc8098d2cb04b3d821c ""
-  "Img/mim_visual.png" 1733128766 268091 03bf86563f0b5252b78524a2466cc985 ""
   "Img/second_stage.png" 1733128766 156374 8e1d124c159d751bf359564910481a12 ""
-  "main.aux" 1733148774 5012 1bf797d075898b615c714c91c28ad2ee "pdflatex"
-  "main.bbl" 1733148772 6116 2b503c4ff8b0ccae72ccdecf4c0de5d4 "bibtex main"
-  "main.tex" 1733149080 17314 2f0dabb80441a45ab9d3c1fae715f6a7 ""
+  "main.aux" 1733154285 4519 fd2761819a30e9076f4c3c3a4bcd0f41 "pdflatex"
+  "main.bbl" 1733154284 6116 2b503c4ff8b0ccae72ccdecf4c0de5d4 "bibtex main"
+  "main.tex" 1733154281 17294 f7d3c0a6b9e1bfbde182b221ff5fd2ef ""
   (generated)
-  "main.pdf"
   "main.aux"
+  "main.pdf"
   "main.log"

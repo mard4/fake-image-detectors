@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  2 DEC 2024 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  2 DEC 2024 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -181,20 +181,20 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -221,28 +221,34 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ]
 Underfull \vbox (badness 8075) has occurred while \output is active []
 
-<Img/mim_visual.png, id=12, 194.6472pt x 140.9265pt>
-File: Img/mim_visual.png Graphic file (type png)
-<use Img/mim_visual.png>
-Package pdftex.def Info: Img/mim_visual.png  used on input line 78.
-(pdftex.def)             Requested size: 201.60077pt x 145.96443pt.
- [2 <./Img/mim_visual.png>]
-<Img/launder_2_stage.png, id=20, 272.9397pt x 66.4884pt>
+ [2]
+<Img/launder_2_stage.png, id=17, 272.9397pt x 66.4884pt>
 File: Img/launder_2_stage.png Graphic file (type png)
 <use Img/launder_2_stage.png>
-Package pdftex.def Info: Img/launder_2_stage.png  used on input line 97.
+Package pdftex.def Info: Img/launder_2_stage.png  used on input line 88.
 (pdftex.def)             Requested size: 239.39923pt x 58.31822pt.
-<Img/first_stage.png, id=21, 617.9085pt x 394.5942pt>
+
+Underfull \hbox (badness 1527) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/10 The eval-u-a-tion pro-vided in [[]] about such two-step
+ []
+
+<Img/first_stage.png, id=19, 617.9085pt x 394.5942pt>
 File: Img/first_stage.png Graphic file (type png)
 <use Img/first_stage.png>
-Package pdftex.def Info: Img/first_stage.png  used on input line 113.
+Package pdftex.def Info: Img/first_stage.png  used on input line 104.
 (pdftex.def)             Requested size: 239.39923pt x 152.87958pt.
-<Img/second_stage.png, id=22, 611.6451pt x 394.5942pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Img/second_stage.png, id=20, 611.6451pt x 394.5942pt>
 File: Img/second_stage.png Graphic file (type png)
 <use Img/second_stage.png>
-Package pdftex.def Info: Img/second_stage.png  used on input line 120.
+Package pdftex.def Info: Img/second_stage.png  used on input line 111.
 (pdftex.def)             Requested size: 239.39923pt x 154.44504pt.
- (./main.bbl [3 <./Img/launder_2_stage.png> <./Img/first_stage.png> <./Img/second_stage.png>])
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./main.bbl [3 <./Img/launder_2_stage.png> <./Img/first_stage.png> <./Img/second_stage.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -258,18 +264,18 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2736 strings out of 478599
- 44360 string characters out of 5854087
- 357585 words of memory out of 5000000
- 20625 multiletter control sequences out of 15000+600000
+ 2728 strings out of 478599
+ 44191 string characters out of 5854087
+ 360073 words of memory out of 5000000
+ 20618 multiletter control sequences out of 15000+600000
  434387 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,66p,1290b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 920896 bytes).
+Output written on main.pdf (4 pages, 626262 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
