@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1733154283 "main.aux" "main.bbl" "main" 1733154285
+["bibtex main"] 1733216333 "main.aux" "main.bbl" "main" 1733216450
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1733154285 4519 fd2761819a30e9076f4c3c3a4bcd0f41 "pdflatex"
-  "references.bib" 1733147295 7950 448534899c3349cbf781ac468537df08 ""
+  "main.aux" 1733216412 4683 5b940bf12b882cce35f1e1ebcb0bc786 "pdflatex"
+  "references.bib" 1733214387 7950 448534899c3349cbf781ac468537df08 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1733154284 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733154285
-  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733154281 17294 f7d3c0a6b9e1bfbde182b221ff5fd2ef ""
+["pdflatex"] 1733216411 "/Users/samuele/git/fake-image-detectors/Report/main.tex" "main.pdf" "main" 1733216450
+  "/Users/samuele/git/fake-image-detectors/Report/main.tex" 1733216450 17685 038af47100c1b84bd1b905a73d5b18f5 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -24,7 +24,6 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1136849748 44656 0cbca70e0534538582128f6b54593cca ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -58,9 +57,9 @@
   "Img/first_stage.png" 1733128766 188124 6fe204d08e78e4e767b3754b61617653 ""
   "Img/launder_2_stage.png" 1733128766 178506 7b3256f8c4121cc8098d2cb04b3d821c ""
   "Img/second_stage.png" 1733128766 156374 8e1d124c159d751bf359564910481a12 ""
-  "main.aux" 1733154285 4519 fd2761819a30e9076f4c3c3a4bcd0f41 "pdflatex"
-  "main.bbl" 1733154284 6116 2b503c4ff8b0ccae72ccdecf4c0de5d4 "bibtex main"
-  "main.tex" 1733154281 17294 f7d3c0a6b9e1bfbde182b221ff5fd2ef ""
+  "main.aux" 1733216412 4683 5b940bf12b882cce35f1e1ebcb0bc786 "pdflatex"
+  "main.bbl" 1733216333 6116 2b503c4ff8b0ccae72ccdecf4c0de5d4 "bibtex main"
+  "main.tex" 1733216450 17685 038af47100c1b84bd1b905a73d5b18f5 ""
   (generated)
   "main.aux"
   "main.pdf"
