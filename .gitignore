@@ -8,3 +8,11 @@ models/
 SD_script/cropped_imgs/
 SD_script/imgs/
 SD_script/input_imgs/
+SD_script/dataset_str_0.1
+SD_script/dataset_str_0.2
+SD_script/dataset_str_0.15
+SD_script/dataset_str_0.05
+
+imgs_SDXL_greater_than_0.05.zip
+LAUNDERED/
+dataset
