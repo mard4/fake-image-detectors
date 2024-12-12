@@ -37,7 +37,7 @@ The goal of this project was to explore the Adversarial Robustness of AI-generat
 
 | <a href="Presentation_1/Img/First_presentation.pdf" target="_blank"><b>First presentation</b></a> | <a href="Report/main.pdf" target="_blank"><b>Report</b></a> | <a href="Presentation_1/Img/First_presentation.pdf" target="_blank"><b>Final presentation</b></a> |
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [![](Presentation_1/Img/THUMBNAIL_FIRSTPRE.png)](docs/presentations/TACV-I-milestone.pdf) | [![](static/assets/images/thumbnails/report.png)](docs/report/report.pdf)         | [![](static/assets/images/thumbnails/first%20presentation.png)](Presentation_1/Img/THUMBNAIL_FIRSTPRE.png)        |
+| [![](Presentation_1/Img/THUMBNAIL_FIRSTPRE.png)](docs/presentations/TACV-I-milestone.pdf) | [![](Report/report.png)](Report/main.pdf)         | [![](Presentation_1/Img/THUMBNAIL_FIRSTPRE.pngg)]("Presentation_1/Img/First_presentation.pdf)        |
 
 
 
