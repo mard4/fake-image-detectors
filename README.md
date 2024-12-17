@@ -19,18 +19,18 @@ The papers considered for the detectors are [here](docs/papers/papers-deepfake-d
 ## Notebooks
 - The notebook used for **cropping** the images is [here](code/image_cropper.ipynb).
 - The notebook used for **laundering** the images is [here](code/laundering_pipeline.ipynb)
-- The notebook used for **plotting** the images is [here](code/plotter.ipynb).
+- The notebook used for **plotting** the results is [here](code/plotter.ipynb).
 
-To execute the two **pipelines** described in the paper, follow the model installation procedures outlined in the official [repository](https://github.com/polimi-ispl/synthetic-image-detection) of the paper[A]. After installing the required packages and models, you can run the following commands to execute the respective scripts:
+To execute the two **pipelines** described in the paper, follow the model installation procedures outlined in the official [repository](https://github.com/polimi-ispl/synthetic-image-detection) of the paper[A]. After installing the required packages and models, you have to edit the script files "*test_real_vs_synthetic_singleimg_modded-2.py*" and "*test_fullysynth_vs_laundered_singleimg_modded-2.py*", in particular the "*stuff*" list. Such list contains a series of tuples structured like "(<image_folder_path>, <score_output_file>)". After this, you can place the scripts inside the folder from [A] and run the following commands:
 
 ```bash:
-python test_real_vs_synthetic_singleimg_modded-2.py --img_path $PATH_TO_TEST_IMAGE --output_file $OUTPUTFILE_SCORES --M 600
+python test_real_vs_synthetic_singleimg_modded-2.py 
 ```
 
 and 
 
 ```bash:
-python test_fullysynth_vs_laundered_singleimg_modded-2.py --img_path $PATH_TO_TEST_IMAGE --output_file $OUTPUTFILE_SCORES --M 600
+python test_fullysynth_vs_laundered_singleimg_modded-2.py 
 ```
 
 ## Second presentation
