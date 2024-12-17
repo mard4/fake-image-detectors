@@ -2,24 +2,36 @@
 The goal of this project was to explore the Adversarial Robustness of AI-generated Image Detectors.
 
 
-| <a href="Presentation_1/Img/First_presentation.pdf" target="_blank"><b>First presentation</b></a> | <a href="Report/main.pdf" target="_blank"><b>Report</b></a> | <a href="Presentation_2/LAST_presentation.pdf" target="_blank"><b>Final presentation</b></a> |
+| <a href="docs/presentations/First_presentation.pdf" target="_blank"><b>First presentation</b></a> | <a href="docs/report/main.pdf" target="_blank"><b>Report</b></a> | <a href="docs/presentations/Second_presentation.pdf" target="_blank"><b>Final presentation</b></a> |
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [![](Presentation_1/Img/THUMBNAIL_FIRSTPRE.png)](Presentation_1/Img/First_presentation.pdf) | [![](Report/THUMB_NAIL_REPORT.png)](Report/main.pdf)         | [![](img/THUMBNAL_LAST.png)](Presentation_2/LAST_presentation.pdf)        |
-
+| [![](docs/presentations/THUMBNAIL_FIRSTPRE.png)](docs/presentations/First_presentation.pdf) | [![](docs/report/THUMB_NAIL_REPORT.png)](docs/report/main.pdf)         | [![](docs/presentations/THUMBNAL_LAST.png)](docs/presentations/Second_presentation.pdf)        |
 
 
 ## First presentation
-The first presentation can be found [here](Presentation_1/Img/First_presentation.pdf)
+The first presentation can be found [here](docs/presentations/First_presentation.pdf)
 
 In the first presentation we focused on an overview of SOTA **Detectors**, trying to understand the different available methods and their differences and **Adversarial Attacks** to understand the different ways to attack a model.
 ## Report
-The report can be found here [here](Report/main.pdf).
+The report can be found here [here](docs/report/main.pdf).
 This report aims to provide a general overview about some **detection** techniques and some recently developed **attack** techniques. Although not exhaustive, we exensively researched the field in order to provide a overall summary.
-The papers considered for the detectors are [here](docs/papers-deepfake-detection-SoA/) and the papers for adversarial attacks are [here](docs/papers-multimedia-forensics-adversarial-attacks-SoA/)
+The papers considered for the detectors are [here](docs/papers/papers-deepfake-detection-SoA/) and the papers for adversarial attacks are [here](docs/papers/papers-multimedia-forensics-adversarial-attacks-SoA/)
 
 ## Notebooks
-The notebooks used for the test and analysis are [here](SD_script/SD_pipeline.ipynb) and [here](EXPERIMENTS/plotter.ipynb)
+- The notebook used for **cropping** the images is [here](code/image_cropper.ipynb).
+- The notebook used for **laundering** the images is [here](code/laundering_pipeline.ipynb)
+- The notebook used for **plotting** the images is [here](code/plotter.ipynb).
 
+To execute the two **pipelines** described in the paper, follow the model installation procedures outlined in the official [repository](https://github.com/polimi-ispl/synthetic-image-detection) of the paper[A]. After installing the required packages and models, you can run the following commands to execute the respective scripts:
+
+```bash:
+python test_real_vs_synthetic_singleimg_modded-2.py --img_path $PATH_TO_TEST_IMAGE --output_file $OUTPUTFILE_SCORES --M 600
+```
+
+and 
+
+```bash:
+python test_fullysynth_vs_laundered_singleimg_modded-2.py --img_path $PATH_TO_TEST_IMAGE --output_file $OUTPUTFILE_SCORES --M 600
+```
 
 ## Second presentation
 The second presentation can be found here [here](Presentation_2/LAST_presentation.pdf)
