@@ -194,6 +194,23 @@ def main():
     if score < 0, the image is detected as being fully-synthetic
     """
 
+    stuff = [
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FFHQ_str_05",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FFHQ_str_05.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FFHQ_str_10",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FFHQ_str_10.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FFHQ_str_15",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FFHQ_str_15.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FORLAB_str_05",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FORLAB_str_05.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FORLAB_str_10",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FORLAB_str_10.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FORLAB_str_15",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FORLAB_str_15.txt"),
+        ("/home/samuele.cappelletti/Dataset_New/float32/TrueFake/PreSocial/Real/FORLAB_str_20",
+         "/home/samuele.cappelletti/Dataset_New/scores/step2/FORLAB_str_20.txt")
+        ]
+
     # Argument parsing
     parser = argparse.ArgumentParser()
     parser.add_argument('--img_dir', type=str, help='Directory containing images to process')                       # MOD
@@ -204,37 +221,42 @@ def main():
     parser.add_argument('--gpu', type=int, default=0)
     args = parser.parse_args()
 
-    img_dir = args.img_dir          #MOD
-    output_file = args.output_file  #MOD
-    select_face_test = args.select_face_test
-    M = args.M
-    gpu = args.gpu
+    for roba in stuff:
+        img_dir = roba[0]          #MOD
+        output_file = roba[1]  #MOD
+        select_face_test = args.select_face_test
+        M = 600
+        gpu = args.gpu
 
-    # Get list of images in the directory
-    img_paths = [os.path.join(img_dir, f) for f in os.listdir(img_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
+        # Get list of images in the directory
+        img_paths = [os.path.join(img_dir, f) for f in os.listdir(img_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
 
-    if not img_paths:
-        print(f"No valid images found in directory: {img_dir}")
-        return 1
-    
-    # Process the image with the detector
-    device = f'cuda:{gpu}'
-    detector = FullySynthvsLaunderedDetector(device=device, M=M, select_face_test=select_face_test)
+        tot = len(img_paths)
+        counter = 1
 
-    with open(output_file, 'w') as f:
-        for img_path in img_paths:
-            try:
-                print(f"Processing image: {img_path}")
-                img = np.asarray(Image.open(img_path))
+        if not img_paths:
+            print(f"No valid images found in directory: {img_dir}")
+            return 1
 
-                # Compute score
-                img_score = detector.laundered_img_detection(img=img)
+        # Process the image with the detector
+        device = f'cuda:{gpu}'
+        detector = FullySynthvsLaunderedDetector(device=device, M=M, select_face_test=select_face_test)
 
-                # Write the score to the file
-                f.write(f"{img_score.item()}\n")
-                print(f"Image: {img_path}, Score: {img_score.item()}")
-            except Exception as e:
-                print(f"Error processing {img_path}: {e}")
+        with open(output_file, 'w') as f:
+            for img_path in img_paths:
+                try:
+                    print(f"Processing image: {img_path}")
+                    img = np.asarray(Image.open(img_path))
+
+                    # Compute score
+                    img_score = detector.laundered_img_detection(img=img)
+
+                    # Write the score to the file
+                    f.write(f"{img_score.item()}\n")
+                    print(f"Image: {img_path}, Score: {img_score.item()}, {counter}/{tot}")
+                    counter += 1
+                except Exception as e:
+                    print(f"Error processing {img_path}: {e}")
 
     return 0
 
